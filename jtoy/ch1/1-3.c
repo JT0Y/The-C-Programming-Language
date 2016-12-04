@@ -9,8 +9,8 @@
 
 int main()
 {
-    int fahr;
-    int celcius;
+    float fahr;
+    float celcius;
     int lower;
     int upper;
     int step;
@@ -24,7 +24,7 @@ int main()
     while (fahr <= upper)
     {
         celcius = 5 * (fahr-32) / 9;
-        printf("%7d %8d \n", fahr, celcius);
+        printf("%7.1f %8.1f \n", fahr, celcius);
         fahr = fahr + step;
     }
 }
